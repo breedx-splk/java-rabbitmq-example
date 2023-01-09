@@ -5,7 +5,6 @@ import com.rabbitmq.client.DeliverCallback;
 import com.rabbitmq.client.Delivery;
 
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 
 import static com.splunk.example.RabbitMqMain.QUEUE_NAME;
 import static java.nio.charset.StandardCharsets.UTF_8;

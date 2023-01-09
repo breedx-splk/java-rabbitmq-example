@@ -7,15 +7,15 @@ repositories {
 }
 
 application {
-    mainClass.set("com.splunk.example.RabbleMqMain")
+    mainClass.set("com.splunk.example.RabbitMqMain")
     applicationDefaultJvmArgs = listOf(
         "-javaagent:splunk-otel-javaagent-1.19.0.jar",
         "-Dotel.javaagent.debug=true",
-        "-Dotel.resource.attributes=deployment.environment=measure-ext",
+        "-Dotel.resource.attributes=deployment.environment=jjp-rabbit",
         "-Dsplunk.metrics.enabled=true",
         "-Dsplunk.metrics.implementation=opentelemetry",
         "-Dotel.metric.export.interval=5000",
-        "-Dotel.service.name=MeasureExternalsExample"
+        "-Dotel.service.name=RabbitExample"
     )
 }
 
